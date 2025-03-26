@@ -70,11 +70,10 @@ class MainActivity : AppCompatActivity() {
                 }
                 //When user input doesn't match
                 else -> {
-                    textViewPiattoPick.text = "Try using Morning, Mid Morning, Aternoon, etc."
+                    textViewPiattoPick.text = "Try using Morning, Mid Morning, Afternoon etc"
                 }
             }
         }
-
         resetHomebutton.setOnClickListener {
             // Clear the Meal Sugggestion and reset to how it was before
             Toast.makeText(this@MainActivity,"Back" , Toast.LENGTH_SHORT).show()
