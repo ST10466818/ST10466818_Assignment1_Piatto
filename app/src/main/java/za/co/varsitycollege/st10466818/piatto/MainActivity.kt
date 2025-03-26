@@ -24,8 +24,8 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
-
-        val editTextTOD = findViewById<EditText>(R.id.editTextTOD) // Change to EditText
+        //Edit text for Time of day
+        val editTextTOD = findViewById<EditText>(R.id.editTextTOD)
         //val appName = findViewById<TextView>(R.id.appName)
         val buttonPiattoPick = findViewById<Button>(R.id.buttonPiattoPick)
         val resetHomebutton = findViewById<Button>(R.id.restHomeButton)
@@ -36,34 +36,34 @@ class MainActivity : AppCompatActivity() {
             Toast.makeText(this@MainActivity, "Your Pick", Toast.LENGTH_SHORT).show()
 
             // When statement with all options
-            when (editTextTOD.text.toString()) {
+            when (editTextTOD.text.toString().lowercase()) {
                 //User inputs Time of day
-                "Morning" -> {
+                "morning" -> {
                     //Breakfast options should appear
                     textViewPiattoPick.text = "Breakfast:" +
                             " Breakfast Burrito ; Shakshuka ; Stove Top Oats"
                 }
-                "Mid Morning" -> {
+                "mid morning" -> {
                     //Morning Snack options should appear
                     textViewPiattoPick.text = "Snack: " +
                             "Smoothie ; Avocado Toast ; Cereal Bar"
                 }
-                "Afternoon" -> {
+                "afternoon" -> {
                     //Lunch meal suggestions will appear
                     textViewPiattoPick.text = "Lunch:" +
                             " Falafel Wrap ; Basil Pesto Salad ; Sandwich"
                 }
-                "Late Afternoon" -> {
+                "late afternoon" -> {
                     //Late Afternoon Snack ideas should show
                     textViewPiattoPick.text = "Snack:" +
                             " Hummus & Flatbread ; Popcorn ; Nuts"
                 }
-                "Evening" -> {
+                "evening" -> {
                     //Dinner options should show
                     textViewPiattoPick.text = "Dinner:" +
                             " Tacos ; Coconut Lentil Curry ; Lasagna"
                 }
-                "Late Evening" -> {
+                "late evening" -> {
                     //Dessert suggestions should appear
                     textViewPiattoPick.text = "Dessert:" +
                             " Ice Cream ; Chocolate ; Fruit Bowl"
