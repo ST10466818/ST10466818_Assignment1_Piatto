@@ -26,21 +26,19 @@ class MainActivity : AppCompatActivity() {
         }
         //Edit text for Time of day
         val editTextTOD = findViewById<EditText>(R.id.editTextTOD)
-        //val appName = findViewById<TextView>(R.id.appName)
         val buttonPiattoPick = findViewById<Button>(R.id.buttonPiattoPick)
         val resetHomebutton = findViewById<Button>(R.id.restHomeButton)
         val textViewPiattoPick = findViewById<TextView>(R.id.textViewYourPiattoPick)
 
         //The button for Meal suggestions
         buttonPiattoPick.setOnClickListener {
-            Toast.makeText(this@MainActivity, "Your Pick", Toast.LENGTH_SHORT).show()
 
             // When statement with all options
             when (editTextTOD.text.toString().lowercase()) {
                 //User inputs Time of day
                 "morning" -> {
                     //Breakfast options should appear
-                    textViewPiattoPick.text = "Breakfast:" +
+                    textViewPiattoPick.text = "Breakfast: " +
                             " Breakfast Burrito ; Shakshuka ; Stove Top Oats"
                 }
                 "mid morning" -> {

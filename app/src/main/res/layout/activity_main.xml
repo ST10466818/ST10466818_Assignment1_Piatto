@@ -5,8 +5,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F44366"
-    android:backgroundTint="#F47434"
+    android:background="#A75D5D"
+    android:backgroundTint="#A75D5D"
     tools:context=".MainActivity">
 
     <TextView
@@ -62,7 +62,7 @@
         android:textSize="34sp"
         app:layout_constraintBottom_toTopOf="@+id/buttonPiattoPick"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
