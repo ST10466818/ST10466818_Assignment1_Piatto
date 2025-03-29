@@ -10,10 +10,10 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import za.co.varsitycollege.st10466818.piatto.R.id.appName
 
 class MainActivity : AppCompatActivity() {
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -25,6 +25,7 @@ class MainActivity : AppCompatActivity() {
             insets
         }
         //Edit text for Time of day
+        val appName= findViewById<TextView>(R.id.appName)
         val editTextTOD = findViewById<EditText>(R.id.editTextTOD)
         val buttonPiattoPick = findViewById<Button>(R.id.buttonPiattoPick)
         val resetHomebutton = findViewById<Button>(R.id.restHomeButton)
