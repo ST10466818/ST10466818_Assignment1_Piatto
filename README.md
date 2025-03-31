@@ -35,6 +35,9 @@ https://github.com/ST10466818/ST10466818_Assignment1_Piatto
 ```bash
 ./gradlew testDebugUnitTest
 ```
+## Image
+
+![screenshot 2](https://github.com/user-attachments/assets/41ef9894-d7cb-4c20-a4eb-55f93b03643b)
 
 ## FAQ
 
