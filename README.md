@@ -56,3 +56,8 @@ The app currently suggests meals from a predefined database, however in future u
 ### What platforms does the app support?
 
 This app is only available on Android devices at the moment.
+
+### Reference 
+
+Background image on UI - Pinterest
+
